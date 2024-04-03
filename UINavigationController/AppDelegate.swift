@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  UINavigationController
-//
-//  Created by Rysty on 03.04.2024.
-//
-
 import UIKit
 
 @main

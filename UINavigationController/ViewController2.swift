@@ -1,10 +1,3 @@
-//
-//  ViewController2.swift
-//  UINavigationController
-//
-//  Created by Rysty on 03.04.2024.
-//
-
 import UIKit
 
 class ViewController2: UIViewController {
@@ -21,7 +14,13 @@ class ViewController2: UIViewController {
            }
            
         @IBAction func goBack() {
-        navigationController?.popViewController(animated: true)
+            let transition = CATransition()
+                    transition.duration = 0.3
+                    transition.type = CATransitionType.push
+                    transition.subtype = CATransitionSubtype.fromLeft
+                    view.window?.layer.add(transition, forKey: kCATransition)
+            
+            navigationController?.popViewController(animated: true)
     }
     
 }
